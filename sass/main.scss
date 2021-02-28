@@ -1,0 +1,21 @@
+/*UTILS*/
+@import "./utils/_variables";
+@import "./utils/visualy-hidden";
+
+/*BASE*/
+@import "./base/common";
+@import "./base/container";
+
+/*COMPONENTS*/
+@import "./components/social-list";
+
+/*LAYOUT*/
+@import "./layout/header";
+@import "./layout/offer";
+@import "./layout/details";
+@import "./layout/what-we-do";
+@import "./layout/ourteam";
+@import "./layout/client-section";
+@import "./layout/contact-footer";
+@import "./layout/portfolio";
+@import "./layout/modal";

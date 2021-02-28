@@ -1,0 +1,31 @@
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+
+  .contact-footer & {
+    display: flex;
+    text-align: left;
+    align-items: baseline;
+  }
+  .header & {
+    display: flex;
+    align-items: center;
+  }
+  .offer-section & {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .list-portfolio-images & {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: -7px;
+  }
+}
