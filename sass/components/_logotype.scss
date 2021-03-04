@@ -1,0 +1,46 @@
+.logotype {
+  display: block;
+  font-weight: bold;
+  font-family: $secondary-font;
+  color: $title-color;
+  @include text($fs: 24px, $lh: 1.17);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include text($fs: 26px, $lh: 1.19);
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  transition: opacity $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+.logo-item {
+  color: $accent-color;
+}
+.footer-logotype {
+  @include text($fs: 24px, $lh: 1.17);
+  font-family: $secondary-font;
+  color: $accent-color-secondary;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    @include text($fs: 26px, $lh: 1.19);
+  }
+  transition: opacity $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}

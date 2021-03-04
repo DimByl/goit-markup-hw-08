@@ -1,8 +1,12 @@
 .ourteam {
-  background: var(--background-color-secondary);
-  padding-top: 94px;
-  padding-bottom: 94px;
-  transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $secondary-background-color;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .ourteam-main-title {
   font-weight: bold;
@@ -13,40 +17,28 @@
 }
 .ourteam-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
   margin: -15px;
 }
 .ourteam-list-item {
+  display: inline-block;
   margin: 15px;
-}
-.ourteam-content {
-  padding: 30px 32px 32px 32px;
-  background-color: var(--accent-color-secondary);
+  background-color: $background-card-team;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  transition: background-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ourteam-title {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  color: var(--secondary-color);
+  @include text($fw: 500, $fs: 16px, $lh: 1.19);
   text-align: center;
+  color: $title-color;
   margin-bottom: 10px;
 }
 .ourteam-image {
-  width: 270px;
-  height: 260px;
+  margin-bottom: 30px;
 }
 .ourteam-description {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.18;
-  color: var(--main-color);
+  @include text($fw: 400, $fs: 16px, $lh: 1.19);
   text-align: center;
   margin-bottom: 16px;
 }

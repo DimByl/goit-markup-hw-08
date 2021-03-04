@@ -1,31 +1,48 @@
 .container {
-  width: 1200px;
-  padding-left: 15px;
+  width: 100%;
   padding-right: 15px;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
+  padding-left: 15px;
+  margin: 0 auto;
 
-  .contact-footer & {
-    display: flex;
-    text-align: left;
-    align-items: baseline;
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
-  .header & {
-    display: flex;
-    align-items: center;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
   .offer-section & {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    padding: 118px 30px;
+    @media screen and (min-width: 768px) {
+      padding: 118px 204px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 200px 252px;
+    }
   }
-  .list-portfolio-images & {
+  .contact-footer & {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: left;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: baseline;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+  }
+  .header & {
+    display: flex;
     align-items: center;
-    justify-content: center;
-    margin: -7px;
+    justify-content: space-between;
   }
 }

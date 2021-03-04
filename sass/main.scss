@@ -1,13 +1,16 @@
 /*UTILS*/
 @import "./utils/_variables";
 @import "./utils/visualy-hidden";
+@import "./utils/mixins";
 
 /*BASE*/
 @import "./base/common";
 @import "./base/container";
 
 /*COMPONENTS*/
+@import "./components/logotype";
 @import "./components/social-list";
+@import "./components/titles";
 
 /*LAYOUT*/
 @import "./layout/header";
@@ -19,3 +22,4 @@
 @import "./layout/contact-footer";
 @import "./layout/portfolio";
 @import "./layout/modal";
+@import "./layout/mobile-menu";

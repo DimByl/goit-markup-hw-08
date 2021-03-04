@@ -1,62 +1,53 @@
 .details-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .details-section-list {
-  display: flex;
-  align-items: center;
-  text-align: left;
-  justify-content: center;
   margin: -15px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .details-section-item {
+  display: inline-block;
   margin: 15px;
-  &::before {
-    display: block;
-    height: 120px;
-    width: 270px;
-    content: "";
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--background-color-secondary);
-    border-radius: 4px;
-    margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
   }
 }
-.antenna {
-  &::before {
-    background-image: url("../images/antenna 1.svg");
-  }
-}
-.clock {
-  &::before {
-    background-image: url("../images/clock\ 1.svg");
-  }
-}
-.vector {
-  &::before {
-    background-image: url("../images/Vector.svg");
-  }
-}
-.astronaut {
-  &::before {
-    background-image: url("../images/astronaut 1.svg");
-  }
+.details-icon {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: $secondary-background-color;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 .details-section-title {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--secondary-color);
   margin-bottom: 10px;
+  @include text();
+  text-transform: uppercase;
+  color: $title-color;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 .details-section-description {
-  width: 270px;
-  height: 75px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  text-transform: none;
-  color: var(--main-color);
+  @include text($fw: 400, $lh: 1.71);
 }
