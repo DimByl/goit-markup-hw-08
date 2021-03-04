@@ -1,16 +1,5 @@
 /*UTILS*/
 /*  */
-/* :root {
-  --main-font: "Roboto", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
-  --main-color: #757575;
-  --secondary-color: #212121;
-  --accent-color: #2196f3;
-  --accent-color-secondary: #ffffff;
-  --background-color: #2f303a;
-  --background-color-secondary: #f5f4fa;
-  --time-hover: 250ms;
-} */
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
