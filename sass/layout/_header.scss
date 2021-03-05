@@ -103,13 +103,13 @@
 .contact-item {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   @include text($fw: 500, $fs: 12px, $lh: 1.167, $ls: 0.02em);
   color: $primary-text-color;
 
   @media screen and (min-width: 1200px) {
     @include text($fw: 500, $ls: 0.02em);
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
   transition: color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
