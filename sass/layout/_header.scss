@@ -103,6 +103,8 @@
 .contact-item {
   display: flex;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
   @include text($fw: 500, $fs: 12px, $lh: 1.167, $ls: 0.02em);
   color: $primary-text-color;
 
