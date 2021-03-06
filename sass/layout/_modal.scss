@@ -172,7 +172,13 @@
   flex-wrap: wrap;
   margin-top: 10px;
   margin-bottom: 30px;
-  font-size: 12px;
+  font-size: 10px;
+  @media screen and (min-width: 460px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
   &::before {
     display: inline-block;
     width: 16px;
