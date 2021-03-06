@@ -83,6 +83,7 @@
   margin: 0px 0px 12px;
   @media screen and (min-width: 1200px) {
     @include text($fs: 20px, $lh: 1.15);
+    max-width: 370px;
   }
 }
 .modal-form {
